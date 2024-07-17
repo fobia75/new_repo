@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path
-from .views import index, mi_wiew, user_form, product_viev, success
+from .views import index, mi_wiew, user_form, product_viev, success, total_in_db
 from django.conf.urls.static import static
 
 
@@ -28,6 +28,7 @@ urlpatterns = [
     path('user_form/', user_form, name= 'user_form'),   
     path('product_viev/', product_viev, name= 'product_viev'),   
     path('success/', success, name= 'success'),   
+    path('total_in_db/', total_in_db, name= 'total_in_db'),   
 ] 
 
 if settings.DEBUG:
